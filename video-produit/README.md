@@ -27,8 +27,8 @@ python3 fony_video.py photo1.jpg photo2.jpg photo3.jpg --duree 20 --format web -
 
 | Option | Effet |
 |---|---|
-| `--format` | `web` 1920×1080, `reel` 1080×1920, `carre` 1080×1080 |
-| `--cadrage` | `auto` (défaut), `remplir` (recadre), `complet` (meuble entier sur fond flouté de la même photo) |
+| `--format` | `reel` 1080×1920 (défaut), `web` 1920×1080, `carre` 1080×1080 |
+| `--cadrage` | `auto` (défaut), `remplir` (plein écran recadré), `galerie` (photo entière sur fond blanc cassé avec ombre douce, rendu catalogue) |
 | `--texte-fin` / `--sous-titre` | carton final sobre (blanc cassé, texte foncé) |
 | `--police` | police de ta charte (.ttf/.otf/.ttc) ; sinon Didot du Mac |
 | `--musique` | piste audio ; fondu d'entrée et de sortie automatiques |
@@ -36,6 +36,10 @@ python3 fony_video.py photo1.jpg photo2.jpg photo3.jpg --duree 20 --format web -
 ## Conseils pour un rendu pro
 
 - **Photos** : nettes, bien éclairées, au moins 2000 px de large. Varier : vue d'ensemble, 3/4, détail matière.
-- **Rythme** : 4 à 5 photos pour 25 s (≈ 5 s par plan). Moins de 3 s par plan = trop nerveux, le script refuse.
+- **Rythme** : 4 à 5 photos pour 25 s (≈ 5 s par plan). Moins de 2,5 s par plan = trop nerveux, le script refuse ; plus de 6 s = il te le signale.
 - **Musique libre de droits** : bibliothèque audio de YouTube Studio ou Pixabay Music. Vérifie la licence de chaque morceau avant publication commerciale.
 - Pas besoin de mention « généré par IA » : rien n'est généré, ce sont tes photos montées.
+
+## Avec OpenMontage
+
+Pour combiner ce moteur avec OpenMontage (montage, musique, contrôle qualité), voir `../openmontage-fony/README.md`.
