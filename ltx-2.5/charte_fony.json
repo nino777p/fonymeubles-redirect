@@ -1,0 +1,45 @@
+{
+  "_doc": "Charte de publication vidéo Fony Meubles pour LTX-2.5. Modifiable sans toucher au code.",
+
+  "style_global": "Photorealistic premium furniture commercial, natural soft daylight, clean and uncluttered modern interior, neutral warm color palette, realistic materials and textures (wood grain, fabric weave, metal finish), true-to-life colors of the product, sharp focus on the furniture, shallow depth of field, calm and elegant pacing, professional cinematography, no people unless specified, no text, no logos, no watermark.",
+
+  "audio_par_defaut": "Quiet, soft ambient room tone only. No music, no voice, no speech.",
+
+  "scenes": {
+    "salon": "a bright contemporary living room with large windows, light oak floor and white walls",
+    "chambre": "a calm, minimalist bedroom with linen textiles and soft morning light",
+    "salle_a_manger": "an elegant dining room with a large window and natural light",
+    "bureau": "a tidy, modern home office with a plant and diffuse daylight",
+    "studio": "a seamless light-grey photo studio background with soft even lighting"
+  },
+
+  "mouvements_camera": {
+    "travelling_avant": "The camera slowly dollies in toward the furniture, smooth and steady.",
+    "travelling_arriere": "The camera slowly dollies out to reveal the furniture in the room, smooth and steady.",
+    "orbite": "The camera performs a slow, smooth half-orbit around the furniture at eye level.",
+    "lateral": "The camera tracks slowly sideways along the furniture, smooth and steady.",
+    "fixe": "The camera remains static on a tripod; only the light subtly shifts.",
+    "detail": "Macro close-up: the camera glides slowly across the material to show texture and finish."
+  },
+
+  "mots_interdits": [
+    "cartoon", "anime", "pixar", "disney", "kawaii", "cute", "chibi", "toy", "funny", "comic", "meme",
+    "neon", "rainbow", "glitter", "sparkles", "magic", "fantasy", "dragon", "unicorn", "explosion",
+    "morph", "transform", "flying", "floating", "dancing", "talking furniture", "emoji",
+    "psychedelic", "glitch", "vaporwave", "cyberpunk", "horror", "zombie",
+    "dessin anime", "dessin animé", "mignon", "rigolo", "drole", "drôle", "paillettes", "arc-en-ciel",
+    "magique", "explosion", "volant", "qui danse", "fluo"
+  ],
+
+  "formats": {
+    "_note": "Dimensions multiples de 64 (exigence du modèle). 1088 ≈ 1080 : recadrer de 8 px au montage si besoin.",
+    "web_16_9":   {"width": 1920, "height": 1088, "fps": 24},
+    "reel_9_16":  {"width": 1088, "height": 1920, "fps": 24},
+    "carre_1_1":  {"width": 1024, "height": 1024, "fps": 24},
+    "brouillon":  {"width": 1024, "height": 576,  "fps": 24}
+  },
+
+  "duree_secondes_defaut": 5,
+
+  "mention_obligatoire": "Vidéo générée par IA — Licence LTX-2.x : toute publication doit indiquer clairement que le contenu est généré par une machine."
+}
