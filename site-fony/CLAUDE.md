@@ -52,6 +52,18 @@ python3 ../fonymeubles-redirect/site-fony/verifier_site.py .
 
 0 erreur exigée. Puis : relire les pages modifiées sur mobile et ordinateur, et ne fusionner sur `main` qu'avec l'accord de nino.
 
-## Attention : outil de construction
+## Construction du CSS et du JS
 
-Les noms `site.<empreinte>.css/js` et les commentaires `/* 20-apparition.js */` montrent que le CSS/JS (et peut-être le HTML) sont **assemblés par un outil qui n'est pas dans ce dépôt**. Avant toute modification, demander à nino où il se trouve : une correction faite directement dans le HTML ou dans `assets/` serait écrasée à la prochaine reconstruction.
+Il n'y a pas d'outil de construction séparé : c'est Claude qui maintient les fichiers.
+Pour modifier le CSS (même méthode pour le JS) :
+
+1. ajouter les règles à la fin de `assets/site.<empreinte>.css`, dans un bloc commenté `/* NN-nom — explication */` ;
+2. calculer la nouvelle empreinte : les 10 premiers caractères du SHA-256 du fichier
+   (`python3 -c "import hashlib;print(hashlib.sha256(open('F','rb').read()).hexdigest()[:10])"`) ;
+3. renommer le fichier avec cette empreinte et remplacer l'ancienne dans **toutes** les pages `.html` **et** dans `sw.js` ;
+4. lancer `verifier_site.py` (il contrôle que `sw.js` suit l'empreinte du CSS).
+
+## Publication
+
+Le dépôt contient un fichier `.nojekyll` : **tout fichier du dépôt est publié sur fony.be**.
+Ne pas y mettre de notes internes, de scripts ou de brouillons.

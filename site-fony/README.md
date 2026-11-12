@@ -1,7 +1,7 @@
 # Améliorations du site fony.be — 12/11/2026
 
-Préparées depuis une session qui n'a qu'un accès **en lecture** au dépôt du site (`nino777p.github.io`).
-Rien n'a été publié. Tout est prêt à être appliqué après validation.
+Mise à jour : les points 2 (vitesse), 3 (ouverture mobile) et le remplacement de l'avis sont appliqués sur la branche
+`claude/site-mobile-vitesse` du dépôt `nino777p.github.io`, **non publiée** (pas encore fusionnée dans `main`).
 
 ## 1. Espace de travail Claude
 
