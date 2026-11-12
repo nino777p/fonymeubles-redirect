@@ -1,0 +1,14 @@
+<!-- Exemple d'intégration d'une vidéo produit (format Reel 9:16) dans une page du site.
+     Remplacer md-gala-video par le nom donné à export_web.sh, et reporter width/height. -->
+<figure class="video-produit">
+  <video data-fony-video
+         muted playsinline loop preload="none" controls
+         width="1080" height="1920"
+         poster="assets/img/md-gala-video-poster.webp"
+         aria-label="Salon Gala de Max Divani : vue d'ensemble, angle et détail du tissu">
+    <source src="assets/video/md-gala-video.mp4" type="video/mp4">
+  </video>
+  <button type="button" class="video-produit-lire">Lire la vidéo</button>
+  <figcaption>Salon Gala — Max Divani</figcaption>
+</figure>
+<!-- Format paysage : ajouter la classe video-produit--paysage sur <figure> et width="1920" height="1080". -->
