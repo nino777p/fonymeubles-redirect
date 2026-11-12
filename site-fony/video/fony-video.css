@@ -1,9 +1,0 @@
-/* Vidéo produit — à ajouter au CSS du site. Reprend les couleurs du site (fond #F3F1EC). */
-.video-produit{position:relative;margin:0;background:#F3F1EC;overflow:hidden}
-.video-produit video{display:block;width:100%;height:auto;aspect-ratio:var(--ratio,9/16);object-fit:cover}
-.video-produit--paysage{--ratio:16/9}
-.video-produit--carre{--ratio:1/1}
-.video-produit-lire{display:none;position:absolute;inset:auto auto 1rem 1rem;padding:.6rem 1.1rem;border:1px solid currentColor;
-  background:rgba(243,241,236,.92);color:#28241F;font:inherit;font-size:.9rem;letter-spacing:.02em;cursor:pointer}
-.video-produit--a-lire .video-produit-lire{display:inline-block}
-.video-produit figcaption{padding:.6rem 0 0;font-size:.85rem;color:#6B645C}
